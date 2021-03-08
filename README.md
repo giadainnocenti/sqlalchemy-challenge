@@ -15,3 +15,17 @@ SQLAlchemy was connected to the database ([hawaii.sqlite](hawaii.sqlite)) and th
 - The data were filtered to retrieve the last 12 months of temperature observation data (TOBS) for the most active station and an histogram was created.\
  ![precipitation](./output/histogram_T.png)\
 
+## 2. Hawaii API
+The web-app is based on the queries created in the part 1. / 
+The following routes were defined
+'''
+\
+'''
+This is the home-route and it is giving information on all the other possible routes
+'''
+/api/v1.0/precipitation
+'''
+This route returns a JSON of the precipitation in a specific date.
+'''
+/api/v1.0/stations
+'''
