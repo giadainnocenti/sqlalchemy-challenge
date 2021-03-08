@@ -31,13 +31,84 @@ This route returns a JSON of the precipitation for every date in the database:
 {
 "2010-01-01": 0.08
 },
+{
+"2010-01-02": 0
+},
+{
+"2010-01-03": 0
+},
+{
+"2010-01-04": 0
+},
 ...]
 ```
 ```
 /api/v1.0/stations
 ```
 This route returns a JSON with the information of each station.
+```JSON
+[
+{
+"elevation": 3,
+"id": 1,
+"latitude": 21.2716,
+"longitude": -157.8168,
+"name": "WAIKIKI 717.2, HI US",
+"station": "USC00519397"
+},
+{
+"elevation": 14.6,
+"id": 2,
+"latitude": 21.4234,
+"longitude": -157.8015,
+"name": "KANEOHE 838.1, HI US",
+"station": "USC00513117"
+},
+...
+]
+```
 ```
 /api/v1.0/tobs
 ```
-This route returns a JSON of the temperature for every date in the database.
+This route returns a JSON of the temperature for every date in the database for the last year of data.
+```JSON
+[
+{
+"2016-08-23": 81
+},
+{
+"2016-08-23": 76
+},
+{
+"2016-08-23": 80
+},
+{
+"2016-08-23": 80
+},
+...]
+```
+```
+/api/v1.0/<start>
+```
+This route returns a JSON of the maximum, minimum and average temperature for the dates after the start date chosen (included).
+```JSON
+{
+"Avg_Temp": 73.2601909461489,
+"Max_Temp": 87,
+"Min_Temp": 53
+}
+```
+```
+/api/v1.0/<start>/<end>
+```
+This route similarly to the previous one reports the maximum, minimum and average temperature for a subset of dates contained in the database. Start and end dates are included.
+```JSON
+{
+"Avg_Temp": 72.70616603513606,
+"Max_Temp": 87,
+"Min_Temp": 56
+}
+```
+## 3. Bonus part and Observations
+This time for lack of time on my side I was not able to do the bonus part by the deadline. I will complete that section as soon as I will have some free time to dedicate to this section again.\
+In the same fashion I believe the last two routes could have been consensed in a lot less lines of code but I have not had time to study how to do it. I am planning on trying to dig up a little bit more to improve my overall knowledge of the Flask method. In the same fashion, I am planning to try adding some more lines of code to make the app understand dates in a format different from yyyy-mm-dd and possibly raise some useful error code if the date is typed incorrectly.
