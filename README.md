@@ -110,5 +110,5 @@ This route similarly to the previous one reports the maximum, minimum and averag
 }
 ```
 ## 3. Bonus part and Observations
-This time for lack of time on my side I was not able to do the bonus part by the deadline. I will complete that section as soon as I will have some free time to dedicate to this section again.\
+This time for lack of time on my side I was not able to do the bonus part by the deadline. I will complete that section as soon as I will have some free time to dedicate to this section again. The files [temp_analysis_bonus_1_starter.ipynb](temp_analysis_bonus_1_starter.ipynb) and [temp_analysis_bonus_2_starter.ipynb](temp_analysis_bonus_2_starter.ipynb) are not completed. /
 In the same fashion I believe the last two routes could have been consensed in a lot less lines of code but I have not had time to study how to do it. I am planning on trying to dig up a little bit more to improve my overall knowledge of the Flask method. In the same fashion, I am planning to try adding some more lines of code to make the app understand dates in a format different from yyyy-mm-dd and possibly raise some useful error code if the date is typed incorrectly.
