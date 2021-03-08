@@ -18,14 +18,26 @@ SQLAlchemy was connected to the database ([hawaii.sqlite](hawaii.sqlite)) and th
 ## 2. Hawaii API
 The web-app is based on the queries created in the part 1. / 
 The following routes were defined
-'''
+```
 \
-'''
+```
 This is the home-route and it is giving information on all the other possible routes
-'''
+```
 /api/v1.0/precipitation
-'''
-This route returns a JSON of the precipitation in a specific date.
-'''
+```
+This route returns a JSON of the precipitation for every date in the database:
+```JSON
+[
+{
+"2010-01-01": 0.08
+},
+...]
+```
+```
 /api/v1.0/stations
-'''
+```
+This route returns a JSON with the information of each station.
+```
+/api/v1.0/tobs
+```
+This route returns a JSON of the temperature for every date in the database.
