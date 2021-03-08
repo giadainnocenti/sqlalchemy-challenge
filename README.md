@@ -19,7 +19,7 @@ SQLAlchemy was connected to the database ([hawaii.sqlite](hawaii.sqlite)) and th
 The web-app is based on the queries created in the part 1. / 
 The following routes were defined
 ```
-\
+/
 ```
 This is the home-route and it is giving information on all the other possible routes
 ```
